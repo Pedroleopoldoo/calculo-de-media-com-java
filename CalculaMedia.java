@@ -4,26 +4,25 @@ public class CalculaMedia{
 	Semestre geral = new Semestre();
 	Aleatorio al = new Aleatorio();
 	
-	
 	private int mediaFinal = 0;
-	private int primeira; 
-	private int segunda; 
+	private int primeiraNota; 
+	private int segundaNota; 
 	private int media;
 	
-	public void setPrimeira(int primeira) {
-		this.primeira = al.getRandom().nextInt(1, 10);;
+	public void setPrimeiraNota(int primeira) {
+		this.primeiraNota = al.getRandom().nextInt(1, 10);;
 	}
 	
-	public void setSegunda(int segunda) {
-		this.segunda = al.getRandom().nextInt(1, 10);;
+	public void setSegundaNota(int segunda) {
+		this.segundaNota = al.getRandom().nextInt(1, 10);;
 	}
 	
-	public int getPrimeira() {
-		return primeira;
+	public int getPrimeiraNota() {
+		return primeiraNota;
 	}
 	
-	public int getSegunda() {
-		return segunda;
+	public int getSegundaNota() {
+		return segundaNota;
 	}
 	
 	public int getMedia() {
@@ -31,7 +30,7 @@ public class CalculaMedia{
 	}
 	
 	public void setMedia(int media) {
-		media = (primeira + segunda) / 2;
+		media = (primeiraNota + segundaNota) / 2;
 		this.media = media;
 	}
 
